@@ -1,3 +1,5 @@
+using System;
+using ConnectingApps.MultiDelegatingHandler.Handlers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,15 @@ namespace ConnectingApps.MultiDelegatingHandler
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient<LogHandler>();
+            services.AddTransient<RetryHandler>();
+            var googleLocation = Configuration["Google"];
+            services.AddHttpClient<ISearchEngineService, SearchEngineService>(c =>
+            {
+                c.BaseAddress = new Uri(googleLocation);
+            }).AddHttpMessageHandler<LogHandler>()
+                .AddHttpMessageHandler<RetryHandler>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
