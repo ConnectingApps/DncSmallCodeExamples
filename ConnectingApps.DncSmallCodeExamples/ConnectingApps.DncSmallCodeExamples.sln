@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectingApps.HttpClientDemo", "ConnectingApps.HttpClientDemo\ConnectingApps.HttpClientDemo.csproj", "{825ABA13-6779-40CF-A247-89DDC0E0806E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingApps.MultiDelegatingHandler", "ConnectingApps.MultiDelegatingHandler\ConnectingApps.MultiDelegatingHandler.csproj", "{083B13A1-88DB-44AE-B696-D8464AB129BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectingApps.MultiDelegatingHandler", "ConnectingApps.MultiDelegatingHandler\ConnectingApps.MultiDelegatingHandler.csproj", "{083B13A1-88DB-44AE-B696-D8464AB129BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectingApps.MultiDelegatingHandler.Integrationtests", "ConnectingApps.MultiDelegatingHandler.Integrationtests\ConnectingApps.MultiDelegatingHandler.Integrationtests.csproj", "{B1901726-BD5E-4177-B332-3D76F77729E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{083B13A1-88DB-44AE-B696-D8464AB129BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{083B13A1-88DB-44AE-B696-D8464AB129BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{083B13A1-88DB-44AE-B696-D8464AB129BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1901726-BD5E-4177-B332-3D76F77729E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1901726-BD5E-4177-B332-3D76F77729E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1901726-BD5E-4177-B332-3D76F77729E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1901726-BD5E-4177-B332-3D76F77729E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
